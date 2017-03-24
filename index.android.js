@@ -29,15 +29,16 @@ export default class imageGallery extends Component {
   renderScene = (route, navigator) => {
     if (route.id === 'App') {
       return (
-        <App
-          navigator={navigator}
-        />
+        <App navigator={navigator}/>
       );
     } else if (route.id === 'Gallery') {
       return (
-        <Gallery
-          navigator={navigator}
-        />
+        <Gallery navigator={navigator}/>
+      );
+    }
+     else if (route.id === 'Info') {
+      return (
+        <Info navigator={navigator}/>
       );
     }
   //Add all routes here in else if conditions
