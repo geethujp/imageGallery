@@ -22,6 +22,7 @@ export default class extends Component {
   render() {
     return (
       <View style = { styles.info_container }>
+      <Text style = { styles.title }>Image Gallery</Text>
         <Text style = { styles.info_wrapper }>
           <Text>Mobile View </Text>
           <Text>Orientation : Potrait </Text>

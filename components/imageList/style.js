@@ -4,11 +4,9 @@
  import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
+  image: {
+    height: 100,
+    width: 100
   },
   title: {
     fontSize: 20,
@@ -16,8 +14,9 @@ export default StyleSheet.create({
     margin: 10,
     color: '#5c6bc0',
   },
-  info_container: {
-        justifyContent: 'center',
+  container: {
+        flex:1,
+        flexDirection:'row',
         alignItems: 'center',
     },
     info_wrapper: {

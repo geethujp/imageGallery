@@ -25,13 +25,13 @@ export default class imageList extends Component {
     this.state = {
       dataSource: ds.cloneWithRows([
         {'name':'Image1', 'image':'http://i.imgur.com/xIzskJl.jpg'},
-        {'name':'Image2', 'image':'http://i.imgur.com/qqlSLaQ.jpg'},
-        {'name':'Image3', 'image':'http://i.imgur.com/eylZ36H.jpg'},
-        {'name':'Image4', 'image':'http://i.imgur.com/0SZLGQo.jpg'},
+        {'name':'Image2', 'image':'http://i.imgur.com/xIzskJl.jpg'},
+        {'name':'Image3', 'image':'http://i.imgur.com/xIzskJl.jpg'},
+        {'name':'Image4', 'image':'http://i.imgur.com/xIzskJl.jpg'},
         {'name':'Image5', 'image':'http://i.imgur.com/xIzskJl.jpg'},
-        {'name':'Image6', 'image':'http://i.imgur.com/qqlSLaQ.jpg'},
-        {'name':'Image7', 'image':'http://i.imgur.com/eylZ36H.jpg'},
-        {'name':'Image8', 'image':'http://i.imgur.com/0SZLGQo.jpg'},
+        {'name':'Image6', 'image':'http://i.imgur.com/xIzskJl.jpg'},
+        {'name':'Image7', 'image':'http://i.imgur.com/xIzskJl.jpg'},
+        {'name':'Image8', 'image':'http://i.imgur.com/xIzskJl.jpg'},
       ]),
     }
   }
@@ -39,10 +39,8 @@ export default class imageList extends Component {
   renderCategory(category) {
     return (
       <View style={styles.container}>
-        <Image source={{uri: category.image}}>
-          <View style={styles.backdropView}>
+        <Image source={{uri: category.image}} style={styles.image}>
             <Text style={styles.headline}>{category.name}</Text>
-          </View>
         </Image>
       </View>
   )
