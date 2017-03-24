@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import App from './components/app/app'; // import all components to be routed here
 import Gallery from './components/gallery/gallery.js';
+import Info from './components/info/info.js';
 
 export default class imageGallery extends Component {
   render() {
