@@ -32,12 +32,7 @@ export default class extends Component {
           <Text>Orientation : Landscape </Text>
           <Text>Number of images per row : 4 </Text>
         </Text>
-        <Button
-          title="Proceed"
-          color="#5c6bc0"
-          onPress={this.onPress}
-          style = {styles.proceed}
-          />
+        <Button title="Proceed" color="#5c6bc0" onPress={this.onPress} style = {styles.proceed}/>
       </View>
     );
   }
