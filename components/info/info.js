@@ -26,12 +26,12 @@ export default class extends Component {
         <Text style = { styles.info_wrapper }>
           <Text>Mobile View </Text>
           <Text>Orientation : Potrait </Text>
-          <Text>Number of images per row : 2 </Text>
+          <Text>Number of images per row : 3 </Text>
         </Text>
         <Text style = { styles.info_wrapper }>
           <Text>Tablet View </Text>
           <Text>Orientation : Landscape </Text>
-          <Text>Number of images per row : 4 </Text>
+          <Text>Number of images per row : 5 </Text>
         </Text>
         <Button title="Proceed" color="#5c6bc0" onPress={this.onPress} style = {styles.proceed}/>
       </View>
