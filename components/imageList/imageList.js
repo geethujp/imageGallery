@@ -8,7 +8,8 @@ import {
     View,
     Image,
     ListView,
-    Button
+    Button,
+    Dimensions
 
 } from 'react-native';
 import styles from './style';
@@ -44,6 +45,26 @@ export default class imageList extends Component {
       );
     }
   render() {
+    const Device = require('react-native-device-detection');
+
+    if(Device.isTablet) {
+      Object.assign(styles, {
+        image: {
+          height: 110,
+          width: Dimensions.get('window').width / 5 ,
+        },
+      });
+    }
+
+    if(Device.isPhone) {
+      Object.assign(styles, {
+        image: {
+          height: 110,
+          width: Dimensions.get('window').width / 3 ,
+        },
+      });
+    }
+
     return (
       <View>
       <Button title="Back" color="#5c6bc0" onPress={this.onPress}/>

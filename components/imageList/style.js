@@ -5,8 +5,6 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 export default StyleSheet.create({
     image: {
-        height: 110,
-        width: Dimensions.get('window').width / 2 ,
         resizeMode: 'cover'//Device width divided in almost a half
     },
     headline: {
@@ -15,9 +13,7 @@ export default StyleSheet.create({
     },
     list_view: {
         flexDirection: 'row',
-        justifyContent: 'space-around',
         alignItems: 'center',
         flexWrap: 'wrap',
     },
-
 });
