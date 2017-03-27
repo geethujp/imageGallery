@@ -14,7 +14,7 @@ export default StyleSheet.create({
         margin: 10,
         color: '#5c6bc0',
     },
-        container: {
+    container: {
         flex:1,
         flexDirection:'row',
         alignItems: 'center',

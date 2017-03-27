@@ -41,7 +41,7 @@ export default class imageList extends Component {
         <Image source={{uri: category.image}} style={styles.image}>
             <Text style={styles.headline}>{category.name}</Text>
         </Image>
-      )
+      );
     }
   render() {
     return (
