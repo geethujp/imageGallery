@@ -38,18 +38,16 @@ export default class imageList extends Component {
 
   renderCategory(category) {
     return (
-      <View style={styles.container}>
         <Image source={{uri: category.image}} style={styles.image}>
             <Text style={styles.headline}>{category.name}</Text>
         </Image>
-      </View>
-  )
-}
+      )
+    }
   render() {
     return (
       <View>
       <Button title="Back" color="#5c6bc0" onPress={this.onPress}/>
-      <ListView dataSource={this.state.dataSource} renderRow={this.renderCategory}/>
+      <ListView dataSource={this.state.dataSource} renderRow={this.renderCategory} contentContainerStyle={styles.list_view}/>
       </View>
     );
   }
