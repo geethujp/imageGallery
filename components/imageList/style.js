@@ -1,11 +1,12 @@
 /**
  * Gallery Style sheet
  */
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     image: {
-        resizeMode: 'cover'//Device width divided in almost a half
+        resizeMode: 'cover',//Device width divided in almost a half
+        margin:5,
     },
     headline: {
         color: '#000',

@@ -13,6 +13,8 @@ import {
 
 } from 'react-native';
 import styles from './style';
+
+
 export default class imageList extends Component {
   onPress = () => {
     const { navigator } = this.props;
@@ -45,26 +47,23 @@ export default class imageList extends Component {
       );
     }
   render() {
-    const Device = require('react-native-device-detection');
-
-    if(Device.isTablet) {
+     const Device = require('react-native-device-detection');
+      if(Device.isTablet) {
       Object.assign(styles, {
-        image: {
-          height: 110,
-          width: Dimensions.get('window').width / 5 ,
-        },
+       image: {
+         width: Dimensions.get('window').width / 5,
+         height: Dimensions.get('window').width / 5,
+       }
       });
     }
-
     if(Device.isPhone) {
       Object.assign(styles, {
-        image: {
-          height: 110,
-          width: Dimensions.get('window').width / 3 ,
-        },
+       image: {
+         width: Dimensions.get('window').width / 3,
+         height: Dimensions.get('window').width / 3,
+       }
       });
     }
-
     return (
       <View>
       <Button title="Back" color="#5c6bc0" onPress={this.onPress}/>
