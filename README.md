@@ -1,7 +1,7 @@
 # imageGallery
 imageGallery is an application built over React-Native. 
- * Mobile View shows potrait view with 2 images per row.
- * Tablet View shows landscape view with 4 images per row.
+ * Mobile View shows 3 images per row.
+ * Tablet View shows 5 images per row.
  
  Device detection is done using  [react-native-device-detection](https://www.npmjs.com/package/react-native-device-detection).
  
