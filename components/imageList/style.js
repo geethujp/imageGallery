@@ -8,14 +8,11 @@ export default StyleSheet.create({
         resizeMode: 'cover',//Device width divided in almost a half
         padding:5,
     },
-    headline: {
-        color: '#000',
-        textAlign: 'center',
-    },
     list_view: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-around',
         flexWrap: 'wrap',
-    },
+        marginTop:20,
+    }
 });
