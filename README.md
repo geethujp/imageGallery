@@ -29,7 +29,7 @@ class DetectthisService {
       this.isTablet = true;
       this.isPhone = false;
     }
-     else if (this.pixelDensity === 1 && (this.adjustedWidth == 600 || this.adjustedHeight == 960)) {
+     else if (this.pixelDensity === 1 && (this.adjustedWidth == 600 && this.adjustedHeight == 960)) {
       this.isTablet = true;
       this.isPhone = false;
     } else {
