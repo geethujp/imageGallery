@@ -5,9 +5,8 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     image: {
-        margin:5,
-        resizeMode: 'contain',
-
+        resizeMode: 'cover',//Device width divided in almost a half
+        padding:5,
     },
     headline: {
         color: '#000',
@@ -15,9 +14,8 @@ export default StyleSheet.create({
     },
     list_view: {
         flexDirection: 'row',
-        justifyContent: 'space-around',
         alignItems: 'center',
+        justifyContent: 'space-around',
         flexWrap: 'wrap',
     },
-
 });
